@@ -1,8 +1,13 @@
 import { Router } from "express";
-import { handleChat } from "../controllers/chatController.js";
 
 const router = Router();
 
-router.post("/", handleChat);
+router.post("/stripe", (req, res) => {
+  res.json({ received: true });
+});
+
+router.post("/calendly", (req, res) => {
+  res.json({ received: true });
+});
 
 export default router;

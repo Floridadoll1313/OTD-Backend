@@ -1,8 +1,8 @@
 import { Router } from "express";
-import { handleChat } from "../controllers/chatController.js";
+import { handleLead } from "../controllers/leadsController.js";
 
 const router = Router();
 
-router.post("/", handleChat);
+router.post("/", handleLead);
 
 export default router;
